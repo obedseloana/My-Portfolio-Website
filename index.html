@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Obed Thabang Seloana-Portfolio</title>
+  <link rel="stylesheet" href="myPortfolio.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <script defer src="main.js" type="module"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container nav-container">
+      <h1 class="logo">Obed Thabang Seloana</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#interests">Interests</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="OT_SELOANA_Resume.pdf" class="btn" download>Download CV</a></li>
+          <li><button id="themeToggle" class="btn">🌙 Dark Mode</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h2>Hello, I’m Obed 👋</h2>
+        <p>Aspiring Software Developer | BSc in Mathematics & Computer Science</p>
+      </div>
+      <img src="images/GraduationPic.jpg" alt="Profile photo of Obed Seloana" class="hero-img">
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container about-content">
+      <img src="images/IMG5.jpg" alt="Obed" class="about-img">
+      <img src="images/IMG4.jpg" alt="Obed" class="about-img">
+      <img src="images/IMG3.jpg" alt="Obed" class="about-img">
+      <img src="images/IMG2.JPG" alt="Obed" class="about-img">
+      <div>
+        <h2>About Me</h2>
+         <p>
+        Aspiring software developer and technology enthusiast with a BSc in Mathematical Science, majoring in Mathematics and Computer Science. 
+        My academic journey introduced me to core programming concepts using C++, Java, HTML, and SQL — building a strong foundation in logic, problem-solving, and structured thinking.
+      </p><br>
+      <p>
+         Beyond my coursework, I have applied what I’ve learned by building personal projects such as a Calculator app, a To-Do List manager, and a Journal application using HTML, CSS and JavaScript. 
+        These projects reflect not only my technical ability but also my eagerness to keep learning and improving through hands-on practice.
+      </p><br>
+      <p>
+        I am currently seeking an internship in the tech field — whether in software development, data science and analysis, database management, computer networks, cybersecurity, cloud computing, or any related area where I can contribute, learn from experienced professionals, and grow my skills.
+      </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>Skills</h2>
+      <canvas id="skillsChart"></canvas>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Calculator</h3>
+          <p>Basic calculator with simple operations.</p>
+          <a href="projects/calculator/calculator.html" target="_blank" class="btn">View</a>
+        </div>
+        <div class="project-card">
+          <h3>To-Do List</h3>
+          <p>Keep track of your daily tasks with ease.</p>
+          <a href="projects/ToDoList/ToDoList.html" target="_blank" class="btn">View</a>
+        </div>
+        <div class="project-card">
+          <h3>Journal</h3>
+          <p>A journal app to write and save personal notes.</p>
+          <a href="projects/Journal/journal.html" target="_blank" class="btn">View</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="interests" class="section">
+    <div class="container interests-content">
+      <div>
+        <h2>Interests</h2>
+        <ul>
+          <li>Web Development</li>
+          <li>Problem Solving</li>
+          <li>Fitness & Sports</li>
+          <li>Reading Tech Blogs</li>
+          <li>Learning New Technologies</li>
+        </ul>
+      </div>
+      <img src="images/images.JPEG" alt="Coding" class="interest-img">
+    </div>
+  </section>
+
+  <section id="quote" class="section">
+    <div class="container">
+      <h2>Quote of the Day</h2>
+      <p id="quote-text">Loading...</p>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact Me</h2>
+       <p>If you'd like to get in touch, you can use the form below or reach me directly through any of these channels:</p>
+
+      <ul class="contact-info">
+      <li>📞 <strong>Phone:</strong> <a href="tel:+27724661392">+27 72 466 1392</a> / <a href="tel:+27784404931">+27 78 440 4931</a></li>
+      <li>📧 <strong>Email:</strong> <a href="mailto:obedseloana@gmail.com">obedseloana@gmail.com</a></li>
+      <li>💬 <strong>WhatsApp:</strong> <a href="https://wa.me/27724661392" target="_blank">Chat with me</a></li>
+      <li>🔗 <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/obed-thabang-seloana-77aa48230" target="_blank">View my profile</a></li>
+    </ul>
+      <form id="contactForm"
+        action="https://formspree.io/f/xnnzodwk"
+        method="POST">
+        <label>Name:</label>
+        <input type="text" id="name" required />
+
+        <label>Email:</label>
+        <input type="email" id="email" required />
+
+        <label>Message:</label>
+        <textarea id="message" required></textarea>
+
+        <button type="submit" class="btn">Send</button>
+        <p id="formMessage"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Obed Thabang Seloana</p>
+    </div>
+  </footer>
+
+  <script src = "myPortfolio.js"></script>
+</body>
+</html>
